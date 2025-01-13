@@ -99,6 +99,7 @@ body {
 
 .profile-card {
   background-color: rgb(39, 40, 41);
+  position: sticky;
   flex: none;
   border-radius: 16px;
   display: flex;
@@ -132,6 +133,14 @@ body {
   color: rgb(210, 210, 210);
 }
 
+.socials-container {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .summary-title {
   font-size: 80px;
   margin: 0;
@@ -142,6 +151,28 @@ body {
 .summary-title span {
   display: block;
   color: rgb(145, 75, 241);
+}
+.summary-subtitle {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  color: rgb(210, 210, 210);
+}
+
+.btn {
+  margin-top: 2rem;
+  font-weight: 600;
+  background-color: rgb(145, 75, 241);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: none;
+  padding: 15px 50px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(125, 68, 199);
 }
 
 /*# sourceMappingURL=main.css.map */
