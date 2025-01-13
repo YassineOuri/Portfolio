@@ -1,20 +1,22 @@
+@use "./variables" as v;
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background-color: rgb(16, 17, 18);
+  background-color: v.$bg-color;
   margin: 0;
   box-sizing: border-box;
   font-family: "Outfit", serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav {
   margin: 3rem 0;
   width: 100%;
-  background-color: rgb(39, 40, 41);
+  background-color: v.$card-bg-color;
   height: 48px;
-  width: 346px;
+  width: fit-content;
   border-radius: 12px;
 
   &-container {
@@ -23,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   &-item {
@@ -45,6 +47,8 @@ body {
 
   &-icon {
     stroke: white;
+    height: 20px;
+    width: 20px;
   }
 
   &-tooltip {
@@ -68,9 +72,96 @@ body {
     font-size: 12px;
   }
 
+  .active {
+    background-color: rgb(145, 75, 241);
+  }
+
   &-item:hover .nav-tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-5px); /* Slight upward movement */
+  }
+}
+
+.main {
+  &-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &-container {
+    padding: 0 30px;
+    gap: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    justify-content: flex-start;
+
+    &_left {
+      width: 344px;
+      height: 640px;
+    }
+
+    &_right {
+      // height: 4400px;
+      width: 656px;
+    }
+  }
+}
+
+.profile-card {
+  background-color: v.$card-bg-color;
+
+  flex: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: v.$text-white;
+  padding: 30px 20px;
+
+  img {
+    height: 260px;
+    width: 260px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 16px;
+  }
+
+  &_title {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &_description,
+  &_location {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    color: rgb(210, 210, 210);
+  }
+}
+
+.summary {
+  &-title {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: v.$text-white;
+    span {
+      display: block;
+      color: v.$purple-color;
+    }
   }
 }
