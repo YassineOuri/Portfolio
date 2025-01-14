@@ -7,72 +7,136 @@
     <link rel="stylesheet" href="dist/main.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="nav">
       <div class="nav-container">
-        <div class="nav-item active">
+        <div class="nav-item active" title="Home">
           <i class="nav-icon" data-feather="home"></i>
           <div class="nav-tooltip">Home</div>
         </div>
-        <div class="nav-item">
+        <div class="nav-item" title="Projects">
           <i class="nav-icon" data-feather="code"></i>
           <div class="nav-tooltip">Projects</div>
         </div>
-        <div class="nav-item">
+        <div class="nav-item" title="Experience">
           <i class="nav-icon" data-feather="briefcase"></i>
           <div class="nav-tooltip">Experience</div>
         </div>
-        <div class="nav-item">
+        <div class="nav-item" title="Blog">
           <i class="nav-icon" data-feather="pen-tool"></i>
           <div class="nav-tooltip">Blog</div>
         </div>
-        <div class="nav-item">
+        <div class="nav-item" title="Contact">
           <i class="nav-icon" data-feather="mail"></i>
           <div class="nav-tooltip">Contact</div>
         </div>
       </div>
     </nav>
+
+    <!-- Main Wrapper -->
     <div class="main-wrapper">
       <div class="main-container">
-        <div class="main-container_left">
+        <!-- Left Sidebar -->
+        <aside class="main-container_left">
           <div class="profile-card">
-            <img src="./assets/profile_img.jpg" alt="profile_image" />
+            <img src="./assets/profile_img.jpg" alt="Profile Picture" />
             <h2 class="profile-card_title">Yassine Ouri</h2>
-
             <p class="profile-card_location">Rades, Tunisia</p>
             <div class="socials-container">
-              <div class="nav-item">
-                <a href="https://www.github.com/YassineOuri" target="_blank">
-                  <i class="nav-icon" data-feather="github"></i
-                ></a>
-              </div>
-              <div class="nav-item">
-                <a href="https://www.linkedin.com" target="_blank"
-                  ><i class="nav-icon" data-feather="linkedin"></i
-                ></a>
-              </div>
-              <div class="nav-item">
-                <a href="mailto:yassine.ouri7319@gmail.com" target="_blank">
-                  <i class="nav-icon" data-feather="mail"></i
-                ></a>
-              </div>
+              <a
+                href="https://www.github.com/YassineOuri"
+                target="_blank"
+                title="GitHub"
+              >
+                <i class="nav-icon" data-feather="github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="nav-icon" data-feather="linkedin"></i>
+              </a>
+              <a
+                href="mailto:yassine.ouri7319@gmail.com"
+                target="_blank"
+                title="Email"
+              >
+                <i class="nav-icon" data-feather="mail"></i>
+              </a>
             </div>
             <button class="btn">Let's Talk</button>
           </div>
-        </div>
+        </aside>
 
-        <div class="main-container_right">
+        <!-- Right Content -->
+        <main class="main-container_right">
+          <!-- Summary Section -->
           <section class="summary">
             <h1 class="summary-title">Software <span>Engineer</span></h1>
             <p class="summary-subtitle">
               Passionate about creating intuitive and engaging user experiences.
-              Specialize in transforming ideas into beautifully crafted
+              Specializing in transforming ideas into beautifully crafted
               products.
             </p>
-            <div class="summary-metrics"></div>
+            <div class="summary-metrics">
+              <div class="summary-metric">
+                <p class="value">+2</p>
+                <p class="description">Years of experience</p>
+              </div>
+              <div class="summary-metric">
+                <p class="value">+15</p>
+                <p class="description">Projects Completed</p>
+              </div>
+            </div>
+            <a class="redirect-link" href="#work">
+              My Work
+              <i class="link-arrow" data-feather="arrow-right"></i>
+            </a>
           </section>
-        </div>
+
+          <!-- Experience Section -->
+          <section id="experience" class="experience">
+            <h1 class="section-title">+2 Years of <span>Experience</span></h1>
+            <div class="card-list">
+              <div class="card">
+                <i class="card-arrow" data-feather="arrow-up-right"></i>
+                <h3 class="card-header">SamRise</h3>
+                <p class="card-description">
+                  Led the design team in creating user-centric mobile and web
+                  applications, improving the user experience and increasing
+                  user engagement.
+                </p>
+                <div class="card-footer">
+                  <span>Apr 2023 - Present</span>
+                </div>
+              </div>
+              <div class="card">
+                <i class="card-arrow" data-feather="arrow-up-right"></i>
+                <h3 class="card-header">SamRise</h3>
+                <p class="card-description">
+                  Led the design team in creating user-centric mobile and web
+                  applications, improving the user experience and increasing
+                  user engagement.
+                </p>
+                <div class="card-footer">
+                  <span>Apr 2023 - Present</span>
+                </div>
+              </div>
+              <a class="redirect-link">
+                View all work experience
+                <i class="link-arrow" data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
+    <footer class="footer">
+      <p>Code by <span>Yassine Ouri</span></p>
+      <p>|</p>
+      <p>Design by <span>Framer</span></p>
+    </footer>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="index.js"></script>
   </body>

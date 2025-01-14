@@ -92,9 +92,15 @@ body {
 .main-container_left {
   width: 344px;
   height: 640px;
+  position: sticky;
+  top: 40px;
+  overflow: hidden;
 }
 .main-container_right {
   width: 656px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .profile-card {
@@ -120,7 +126,6 @@ body {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -0.04em;
-  line-height: 110%;
   text-align: center;
   margin-bottom: 0;
 }
@@ -141,6 +146,11 @@ body {
   align-items: center;
 }
 
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .summary-title {
   font-size: 80px;
   margin: 0;
@@ -160,6 +170,26 @@ body {
   margin-bottom: 0;
   color: rgb(210, 210, 210);
 }
+.summary-metrics {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.summary .value {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+.summary .description {
+  letter-spacing: -0.01em;
+  color: rgb(217, 217, 217);
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+}
 
 .btn {
   margin-top: 2rem;
@@ -173,6 +203,106 @@ body {
 .btn:hover {
   cursor: pointer;
   background-color: rgb(125, 68, 199);
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-title {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+.section-title span {
+  display: block;
+  color: rgb(145, 75, 241);
+}
+
+.card {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding: 24px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card-arrow {
+  position: absolute;
+  right: 16px;
+  top: 25px;
+  transition: all 0.2s ease;
+}
+.card-header {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 600;
+}
+.card-description {
+  width: 100%;
+  font-size: 16px;
+  color: rgb(153, 143, 143);
+}
+.card-footer {
+  color: rgb(153, 143, 143);
+  display: flex;
+  justify-content: space-between;
+}
+.card:hover {
+  background-color: rgb(39, 40, 41);
+}
+.card:hover .card-arrow {
+  stroke: rgb(145, 75, 241);
+  transform: translate(5px, -5px);
+}
+
+.redirect-link {
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.redirect-link .link-arrow {
+  transition: all 0.2s ease;
+}
+.redirect-link:hover .link-arrow {
+  stroke: rgb(145, 75, 241);
+  transform: translateX(3px);
+}
+.redirect-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(145, 75, 241);
+  text-underline-offset: 5px;
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  padding: 160px 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer p {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.footer p span {
+  color: rgb(145, 75, 241);
 }
 
 /*# sourceMappingURL=main.css.map */
