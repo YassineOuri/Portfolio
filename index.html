@@ -10,26 +10,26 @@
     <!-- Navigation -->
     <nav class="nav">
       <div class="nav-container">
-        <div class="nav-item active" title="Home">
+        <a href="#" class="nav-item active" title="Home">
           <i class="nav-icon" data-feather="home"></i>
           <div class="nav-tooltip">Home</div>
-        </div>
-        <div class="nav-item" title="Projects">
+        </a>
+        <a href="#projects" class="nav-item" title="Projects">
           <i class="nav-icon" data-feather="code"></i>
           <div class="nav-tooltip">Projects</div>
-        </div>
-        <div class="nav-item" title="Experience">
+        </a>
+        <a href="#experience" class="nav-item" title="Experience">
           <i class="nav-icon" data-feather="briefcase"></i>
           <div class="nav-tooltip">Experience</div>
-        </div>
-        <div class="nav-item" title="Blog">
+        </a>
+        <a class="nav-item" title="Blog">
           <i class="nav-icon" data-feather="pen-tool"></i>
           <div class="nav-tooltip">Blog</div>
-        </div>
-        <div class="nav-item" title="Contact">
+        </a>
+        <a class="nav-item" title="Contact">
           <i class="nav-icon" data-feather="mail"></i>
           <div class="nav-tooltip">Contact</div>
-        </div>
+        </a>
       </div>
     </nav>
 
@@ -102,6 +102,14 @@
               <div class="card">
                 <i class="card-arrow" data-feather="arrow-up-right"></i>
                 <h3 class="card-header">SamRise</h3>
+                <div class="chip-list">
+                  <div class="chip">Vue.js</div>
+                  <div class="chip">Typescript</div>
+                  <div class="chip">PHP 7+</div>
+                  <div class="chip">Laravel 10</div>
+                  <div class="chip">Node.js</div>
+                  <div class="chip">AWS</div>
+                </div>
                 <p class="card-description">
                   Led the design team in creating user-centric mobile and web
                   applications, improving the user experience and increasing
@@ -114,6 +122,13 @@
               <div class="card">
                 <i class="card-arrow" data-feather="arrow-up-right"></i>
                 <h3 class="card-header">Bee Tunisie</h3>
+                <div class="chip-list">
+                  <div class="chip">Angular</div>
+                  <div class="chip">Spring Boot</div>
+                  <div class="chip">PostgreSQL</div>
+                  <div class="chip">Spring MVC</div>
+                  <div class="chip">Spring Security</div>
+                </div>
                 <p class="card-description">
                   Led the design team in creating user-centric mobile and web
                   applications, improving the user experience and increasing
@@ -125,6 +140,134 @@
               </div>
               <a class="redirect-link">
                 View all work experience
+                <i class="link-arrow" data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </section>
+
+          <!-- Projects Section -->
+          <section id="projects" class="projects">
+            <h1 class="section-title">Recent <span>Projects</span></h1>
+            <div class="card-list">
+              <div class="card">
+                <i class="card-arrow" data-feather="arrow-up-right"></i>
+                <img
+                  src="./assets/project-image"
+                  class="card-image"
+                  alt="project-image"
+                />
+                <div class="card-body">
+                  <h3 class="card-header">SamRise ABI</h3>
+                  <div class="chip-list">
+                    <div class="chip">Vue.js</div>
+                    <div class="chip">Laravel</div>
+                  </div>
+                  <p class="card-description">
+                    Led the design team in creating user-centric mobile and web
+                    applications, improving the user experience and increasing
+                    user engagement.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <i class="card-arrow" data-feather="arrow-up-right"></i>
+                <img
+                  src="./assets/project-image"
+                  class="card-image"
+                  alt="project-image"
+                />
+                <div class="card-body">
+                  <h3 class="card-header">TaskShell</h3>
+                  <div class="chip-list">
+                    <div class="chip">CLI</div>
+                    <div class="chip">Spring MVC</div>
+                    <div class="chip">Spring Shell</div>
+                  </div>
+                  <p class="card-description">
+                    Led the design team in creating user-centric mobile and web
+                    applications, improving the user experience and increasing
+                    user engagement.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a class="redirect-link">
+              View all projects
+              <i class="link-arrow" data-feather="arrow-right"></i>
+            </a>
+          </section>
+
+          <!-- Skills Section-->
+          <section id="skills" class="skills">
+            <h1 class="section-title">Main<span>Skills</span></h1>
+            <div class="skills-list">
+              <div class="skill-card">
+                <img src="./assets/vue-logo.png" class="skill-logo" alt="" />
+                <p class="skill-name">Vue.js</p>
+              </div>
+              <div class="skill-card">
+                <img
+                  src="./assets/laravel-logo.png"
+                  class="skill-logo"
+                  alt=""
+                />
+                <p class="skill-name">Laravel</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/php-logo.png" class="skill-logo" alt="" />
+                <p class="skill-name">PHP</p>
+              </div>
+              <div class="skill-card">
+                <img src="./assets/aws-logo.png" class="skill-logo" alt="" />
+                <p class="skill-name">AWS</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Blog Section -->
+          <section id="blog" class="blog">
+            <h1 class="section-title">Technical<span>Insights</span></h1>
+            <div class="card-list">
+              <div class="card">
+                <i class="card-arrow" data-feather="arrow-up-right"></i>
+                <h3 class="card-header">
+                  Starting and Growing a Career in Web Design
+                </h3>
+                <div class="chip-list">
+                  <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
+                </div>
+
+                <p class="card-description">
+                  As the internet continues to develop and grow exponentially,
+                  jobs related to the industry do too, particularly those that
+                  relate to web design and development.
+                </p>
+                <div class="card-footer">
+                  <span>Apr 8, 2022</span>
+                  <span>6 min read</span>
+                </div>
+              </div>
+              <div class="card">
+                <i class="card-arrow" data-feather="arrow-up-right"></i>
+                <h3 class="card-header">
+                  Wanna use S3 but no AWS account provided for now?
+                </h3>
+                <div class="chip-list">
+                  <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
+                </div>
+
+                <p class="card-description">
+                  Started building a backend, of course, you will need somewhere
+                  to store those files (images/videos…). In this case, you have
+                  two options...
+                </p>
+                <div class="card-footer">
+                  <span>Mar 15, 2023</span>
+                  <span>3 min read</span>
+                </div>
+              </div>
+              <a class="redirect-link">
+                View all articles
                 <i class="link-arrow" data-feather="arrow-right"></i>
               </a>
             </div>
