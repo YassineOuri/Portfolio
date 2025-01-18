@@ -137,8 +137,7 @@ body {
   text-align: center;
   margin-bottom: 0;
 }
-.profile-card_description,
-.profile-card_location {
+.profile-card_description, .profile-card_location {
   display: inline-block;
   font-weight: 400;
   font-size: 18px;
@@ -500,17 +499,6 @@ input:focus {
   right: 16px;
   top: 25px;
   transition: all 0.2s ease;
-}
-
-@media (max-width: 300px) {
-  .timeline {
-    width: 100%;
-    padding: 30px 5px 30px 10px;
-  }
-  .timeline ul li .content h3 {
-    color: #34ace0;
-    font-size: 15px;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
