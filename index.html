@@ -14,17 +14,30 @@
           <i class="nav-icon" data-feather="home"></i>
           <div class="nav-tooltip">Home</div>
         </a>
-        <a href="#projects" class="nav-item" title="Projects">
-          <i class="nav-icon" data-feather="code"></i>
-          <div class="nav-tooltip">Projects</div>
-        </a>
+
         <a href="#experience" class="nav-item" title="Experience">
           <i class="nav-icon" data-feather="briefcase"></i>
           <div class="nav-tooltip">Experience</div>
         </a>
+        <a href="#projects" class="nav-item" title="Projects">
+          <i class="nav-icon" data-feather="code"></i>
+          <div class="nav-tooltip">Projects</div>
+        </a>
+        <a href="#projects" class="nav-item" title="Projects">
+          <i class="nav-icon" data-feather="tool"></i>
+          <div class="nav-tooltip">Skills</div>
+        </a>
         <a class="nav-item" title="Blog">
           <i class="nav-icon" data-feather="pen-tool"></i>
           <div class="nav-tooltip">Blog</div>
+        </a>
+        <a class="nav-item" title="Certifications & Achievements">
+          <i class="nav-icon" data-feather="award"></i>
+          <div class="nav-tooltip">Certifications & Achievements</div>
+        </a>
+        <a class="nav-item" title="Recommendations">
+          <i class="nav-icon" data-feather="message-square"></i>
+          <div class="nav-tooltip">Recommendations</div>
         </a>
         <a class="nav-item" title="Contact">
           <i class="nav-icon" data-feather="mail"></i>
@@ -44,6 +57,7 @@
             <p class="profile-card_location">Rades, Tunisia</p>
             <div class="socials-container">
               <a
+                class="nav-item"
                 href="https://www.github.com/YassineOuri"
                 target="_blank"
                 title="GitHub"
@@ -51,6 +65,7 @@
                 <i class="nav-icon" data-feather="github"></i>
               </a>
               <a
+                class="nav-item"
                 href="https://www.linkedin.com"
                 target="_blank"
                 title="LinkedIn"
@@ -58,6 +73,7 @@
                 <i class="nav-icon" data-feather="linkedin"></i>
               </a>
               <a
+                class="nav-item"
                 href="mailto:yassine.ouri7319@gmail.com"
                 target="_blank"
                 title="Email"
@@ -100,7 +116,7 @@
           <!-- Experience Section -->
           <section id="experience" class="experience">
             <h1 class="section-title">+2 Years of <span>Experience</span></h1>
-            <div class="card-list">
+            <!-- <div class="card-list">
               <div class="card">
                 <i class="card-arrow" data-feather="arrow-up-right"></i>
                 <h3 class="card-header">SamRise</h3>
@@ -144,6 +160,34 @@
                 View all work experience
                 <i class="link-arrow" data-feather="arrow-right"></i>
               </a>
+            </div> -->
+            <div class="timeline">
+              <ul>
+                <li>
+                  <span>April 2023 - Present</span>
+                  <div class="content">
+                    <h3>SamRise</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                  <i class="card-arrow" data-feather="arrow-up-right"></i>
+                </li>
+                <li>
+                  <span>3rd January 2020</span>
+                  <div class="content">
+                    <h3>Bee Tunisie</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                  <i class="card-arrow" data-feather="arrow-up-right"></i>
+                </li>
+              </ul>
             </div>
           </section>
 
@@ -279,7 +323,7 @@
             </div>
           </section>
 
-          <!-- Achievements and Certifications-->
+          <!-- Achievements and Certifications Section-->
           <section id="achievements" class="achievements">
             <h1 class="section-title">
               Acheivements &<span>Certifications</span>
@@ -312,7 +356,7 @@
             </a>
           </section>
 
-          <!-- Recommendations-->
+          <!-- Recommendations Section-->
           <section id="recommendations" class="recommendations">
             <h1 class="section-title">
               <span>Recommendations</span>
@@ -341,6 +385,7 @@
             </a>
           </section>
 
+          <!-- Contact Section -->
           <section class="contact" id="contact">
             <h1 class="section-title">LET'S WORK <span>Together</span></h1>
             <form class="contact-form">
@@ -375,9 +420,7 @@
       </div>
     </div>
     <footer class="footer">
-      <p>Code by <span>Yassine Ouri</span></p>
-      <p>|</p>
-      <p>Design by <span>Framer</span></p>
+      <p>© <span id="year"></span> Yassine Ouri. All rights reserved.</p>
     </footer>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="index.js"></script>

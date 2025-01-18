@@ -66,7 +66,7 @@ body {
   white-space: nowrap; /* Prevents text from wrapping */
   z-index: 10;
   white-space: nowrap;
-  width: 56px;
+  width: fit-content;
   height: 15px;
   font-size: 12px;
 }
@@ -399,7 +399,7 @@ input:focus {
 .footer {
   width: 100%;
   height: 10vh;
-  padding: 160px 0 80px;
+  padding: 100px 0 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,6 +436,69 @@ input:focus {
 }
 .secondary:hover {
   background-color: rgb(20, 107, 118);
+}
+
+.timeline {
+  width: 100%;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 30px 20px;
+}
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid rgb(145, 75, 241);
+  padding: 10px 5px;
+}
+.timeline ul li {
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+.timeline ul li span {
+  display: inline-block;
+  background-color: rgb(2, 128, 144);
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 15px;
+  text-align: center;
+}
+.timeline ul li .content h3 {
+  font-size: 26px;
+  padding-top: 5px;
+}
+.timeline ul li .content p {
+  font-size: 16px;
+  color: rgb(153, 143, 143);
+}
+.timeline ul li::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(145, 75, 241);
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: 0.5s;
+}
+.timeline ul li:hover {
+  background-color: rgb(39, 40, 41);
+}
+.timeline ul li:hover .card-arrow {
+  stroke: rgb(145, 75, 241);
+  transform: translate(5px, -5px);
+}
+.timeline ul li:hover:before {
+  background-color: rgb(145, 75, 241);
+}
+.timeline ul li .card-arrow {
+  position: absolute;
+  right: 16px;
+  top: 25px;
+  transition: all 0.2s ease;
 }
 
 /*# sourceMappingURL=main.css.map */
