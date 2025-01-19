@@ -3,30 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
     <link rel="stylesheet" href="../dist/main.css" />
-    <title>Yassine Ouri | Blog</title>
+    <link rel="stylesheet" href="article.css" />
   </head>
   <body>
     <nav class="nav">
       <div class="nav-container">
-        <a href="../index.html" class="nav-item active" title="Home">
+        <a href="../index.html" class="nav-item " title="Home">
           <i class="nav-icon" data-feather="home"></i>
           <div class="nav-tooltip">Home</div>
         </a>
 
-        <a href="#experience" class="nav-item" title="Experience">
+        <a href="../index.html#experience" class="nav-item" title="Experience">
           <i class="nav-icon" data-feather="briefcase"></i>
           <div class="nav-tooltip">Experience</div>
         </a>
-        <a href="#projects" class="nav-item" title="Projects">
+        <a href="../index.html#projects" class="nav-item" title="Projects">
           <i class="nav-icon" data-feather="code"></i>
           <div class="nav-tooltip">Projects</div>
         </a>
-        <a href="#projects" class="nav-item" title="Projects">
+        <a href="../index.html#projects" class="nav-item" title="Projects">
           <i class="nav-icon" data-feather="tool"></i>
           <div class="nav-tooltip">Skills</div>
         </a>
-        <a href="./blog/index.html" class="nav-item" title="Blog">
+        <a href="./blog/index.html" class="nav-item active" title="Blog">
           <i class="nav-icon" data-feather="pen-tool"></i>
           <div class="nav-tooltip">Blog</div>
         </a>
@@ -44,136 +45,22 @@
         </a>
       </div>
     </nav>
-    <div class="main-wrapper">
-      <div class="main-container">
-        <!-- Left Sidebar -->
-        <aside class="main-container_left">
-          <div class="profile-card">
-            <img src="../assets/profile_img.jpg" alt="Profile Picture" />
-            <h2 class="profile-card_title">Yassine Ouri</h2>
-            <p class="profile-card_location">Rades, Tunisia</p>
-            <div class="socials-container">
-              <a
-                class="nav-item"
-                href="https://www.github.com/YassineOuri"
-                target="_blank"
-                title="GitHub"
-              >
-                <i class="nav-icon" data-feather="github"></i>
-              </a>
-              <a
-                class="nav-item"
-                href="https://www.linkedin.com"
-                target="_blank"
-                title="LinkedIn"
-              >
-                <i class="nav-icon" data-feather="linkedin"></i>
-              </a>
-              <a
-                class="nav-item"
-                href="mailto:yassine.ouri7319@gmail.com"
-                target="_blank"
-                title="Email"
-              >
-                <i class="nav-icon" data-feather="mail"></i>
-              </a>
-            </div>
-            <button class="btn secondary">
-              <i data-feather="download"></i> Resume
-            </button>
-          </div>
-        </aside>
+    <article class="content" id="content" >
+        <img  id="content_banner" src="#" alt="blog_banner">
+        <h1 id="content_title" class="summary-title" style="font-size: 36px;"></h1>
+        <p class="content_posted_at">January 19th 2024</p>
+        <div class="chip-list">
+          <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
+        </div>
+        <div class="content_body" id="content_body">
 
-        <!-- Right Content -->
-        <main class="main-container_right">
-          <section id="blog" class="blog">
-            <h1 class="section-title">Technical<span>Insights</span></h1>
-            <div class="card-list" style="margin-top: 2rem">
-              <div class="card">
-                <i class="card-arrow" data-feather="arrow-up-right"></i>
-                <h3 class="card-header">
-                  Starting and Growing a Career in Web Design
-                </h3>
-                <div class="chip-list">
-                  <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
-                </div>
-
-                <p class="card-description">
-                  As the internet continues to develop and grow exponentially,
-                  jobs related to the industry do too, particularly those that
-                  relate to web design and development.
-                </p>
-                <div class="card-footer">
-                  <span>Apr 8, 2022</span>
-                  <span>6 min read</span>
-                </div>
-              </div>
-              <div class="card">
-                <i class="card-arrow" data-feather="arrow-up-right"></i>
-                <h3 class="card-header">
-                  Wanna use S3 but no AWS account provided for now?
-                </h3>
-                <div class="chip-list">
-                  <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
-                </div>
-
-                <p class="card-description">
-                  Started building a backend, of course, you will need somewhere
-                  to store those files (images/videos…). In this case, you have
-                  two options...
-                </p>
-                <div class="card-footer">
-                  <span>Mar 15, 2023</span>
-                  <span>3 min read</span>
-                </div>
-              </div>
-              <div class="card">
-                <i class="card-arrow" data-feather="arrow-up-right"></i>
-                <h3 class="card-header">
-                  Wanna use S3 but no AWS account provided for now?
-                </h3>
-                <div class="chip-list">
-                  <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
-                </div>
-
-                <p class="card-description">
-                  Started building a backend, of course, you will need somewhere
-                  to store those files (images/videos…). In this case, you have
-                  two options...
-                </p>
-                <div class="card-footer">
-                  <span>Mar 15, 2023</span>
-                  <span>3 min read</span>
-                </div>
-              </div>
-              <div class="card">
-                <i class="card-arrow" data-feather="arrow-up-right"></i>
-                <h3 class="card-header">
-                  Wanna use S3 but no AWS account provided for now?
-                </h3>
-                <div class="chip-list">
-                  <div class="chip">AWS, S3, Linux, Node.js, DevOps</div>
-                </div>
-
-                <p class="card-description">
-                  Started building a backend, of course, you will need somewhere
-                  to store those files (images/videos…). In this case, you have
-                  two options...
-                </p>
-                <div class="card-footer">
-                  <span>Mar 15, 2023</span>
-                  <span>3 min read</span>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-      </div>
-    </div>
-    <footer class="footer">
-      <p>© <span id="year"></span> Yassine Ouri. All rights reserved.</p>
-    </footer>
+        </div>
+      </article>
+      <footer class="footer">
+        <p>© <span id="year"></span> Yassine Ouri. All rights reserved.</p>
+      </footer>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="../index.js"></script>
+    <script src="./article.js"></script>
   </body>
 </html>

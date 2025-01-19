@@ -244,6 +244,9 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+.card-list a {
+  text-decoration: none;
+}
 .card-arrow {
   position: absolute;
   right: 16px;
